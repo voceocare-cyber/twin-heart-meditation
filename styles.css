@@ -327,9 +327,13 @@ a:hover { color: var(--ink); }
 }
 
 .audience-item {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   padding: 1.35rem 1.4rem 1.45rem;
   background: linear-gradient(165deg, #fff9fb 0%, #ffeef4 100%);
   border-left: 3px solid var(--rose-mid);
+  box-sizing: border-box;
 }
 
 .audience-item h3 {
@@ -440,72 +444,43 @@ a:hover { color: var(--ink); }
   }
 }
 
-/* Split layouts */
+/* Centre / join block — centered after short copy */
 
-.split {
-  display: grid;
-  gap: clamp(1.75rem, 4vw, 4rem);
-  align-items: start;
+.centre-block {
+  text-align: center;
+  max-width: 40rem;
+  margin-inline: auto;
 }
 
-@media (min-width: 820px) {
-  .split {
-    grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.15fr);
-    gap: 4.5rem;
+.centre-block .kicker {
+  margin-bottom: 0.75rem;
+}
+
+.centre-block h2 {
+  font-size: clamp(1.7rem, 3.8vw, 2.65rem);
+  margin: 0 0 1rem;
+}
+
+@media (min-width: 520px) {
+  .centre-block h2 {
+    white-space: nowrap;
   }
 }
 
-.split-lead h2 {
-  font-size: clamp(1.9rem, 3.8vw, 2.65rem);
-  max-width: 14ch;
-  margin: 0;
-}
-
-.split-body p {
+.centre-lede {
+  margin: 0 auto;
+  max-width: 34rem;
+  font-size: 1.08rem;
+  font-weight: 300;
+  line-height: 1.7;
   color: var(--ink-soft);
-  max-width: 52ch;
 }
 
-.venue {
-  display: grid;
-  gap: 1.5rem;
-  margin: 2rem 0 0;
-  padding: 1.5rem 0 0;
-  border-top: 1px solid var(--line);
-  font-style: normal;
+.audience-item {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
 }
-
-@media (min-width: 560px) {
-  .venue {
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-  }
-}
-
-.venue h3 {
-  font-family: var(--font-body);
-  font-size: 0.72rem;
-  font-weight: 500;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--rose-deep);
-  margin: 0 0 0.45rem;
-}
-
-.venue p {
-  margin: 0;
-  font-family: var(--font-display);
-  font-size: 1.1rem;
-  font-weight: 550;
-  line-height: 1.45;
-  color: var(--ink);
-}
-
-.venue a {
-  color: var(--ink);
-  text-decoration: none;
-}
-.venue a:hover { color: var(--rose-deep); }
 
 /* Session steps */
 
@@ -630,14 +605,14 @@ a:hover { color: var(--ink); }
 .footer-grid {
   display: grid;
   gap: 1.75rem;
-  align-items: start;
+  align-items: center;
 }
 
 @media (min-width: 820px) {
   .footer-grid {
     grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr);
     gap: 2.5rem;
-    align-items: stretch;
+    align-items: center;
   }
 }
 
@@ -645,7 +620,7 @@ a:hover { color: var(--ink); }
   text-align: left;
   display: grid;
   gap: 0.55rem;
-  align-content: start;
+  align-content: center;
 }
 
 .footer-brand {
