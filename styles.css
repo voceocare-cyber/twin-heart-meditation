@@ -457,7 +457,7 @@ a:hover { color: var(--ink); }
 
 .split-lead h2 {
   font-size: clamp(1.9rem, 3.8vw, 2.65rem);
-  max-width: 12ch;
+  max-width: 14ch;
   margin: 0;
 }
 
@@ -622,8 +622,8 @@ a:hover { color: var(--ink); }
 /* Footer */
 
 .site-footer {
-  background: #6a4654;
-  color: rgba(255, 248, 250, 0.72);
+  background: #b05a74;
+  color: rgba(255, 248, 250, 0.82);
   padding-block: clamp(2.5rem, 5vw, 3.5rem);
 }
 
