@@ -219,12 +219,12 @@ a:hover { color: var(--ink); }
 }
 
 .btn-primary {
-  background: var(--rose-mid);
-  color: #fff;
+  background: #d9849c;
+  color: #fff !important;
 }
 .btn-primary:hover {
-  background: var(--rose-deep);
-  color: #fff;
+  background: #c46b86;
+  color: #fff !important;
 }
 
 .btn-quiet {
