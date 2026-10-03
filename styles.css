@@ -178,11 +178,11 @@ a:hover { color: var(--ink); }
 }
 
 .hero-line {
-  font-size: clamp(1.2rem, 2.5vw, 1.45rem);
+  font-size: clamp(1.05rem, 2.4vw, 1.45rem);
   font-weight: 300;
   color: var(--ink-soft);
   margin: 0 auto 1.9rem;
-  max-width: 22ch;
+  white-space: nowrap;
   animation: rise 0.9s var(--ease) 0.08s both;
 }
 
