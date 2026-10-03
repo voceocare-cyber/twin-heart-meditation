@@ -208,9 +208,9 @@ a:hover { color: var(--ink); }
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 0.85rem 1.45rem;
+  padding: 0.55rem 1.05rem;
   font-family: var(--font-body);
-  font-size: 0.95rem;
+  font-size: 0.88rem;
   font-weight: 500;
   text-decoration: none;
   border: 1px solid transparent;
@@ -474,12 +474,6 @@ a:hover { color: var(--ink); }
   font-weight: 300;
   line-height: 1.7;
   color: var(--ink-soft);
-}
-
-.audience-item {
-  min-height: 100%;
-  display: flex;
-  flex-direction: column;
 }
 
 /* Session steps */
