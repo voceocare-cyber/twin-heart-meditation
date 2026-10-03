@@ -168,21 +168,26 @@ a:hover { color: var(--ink); }
 }
 
 .hero-brand {
-  font-size: clamp(2.8rem, 7vw, 4.6rem);
+  font-size: clamp(2.4rem, 6.2vw, 4.6rem);
   font-weight: 650;
   letter-spacing: -0.03em;
   line-height: 1.02;
   margin: 0 auto 0.95rem;
-  max-width: 11ch;
+  max-width: none;
+  white-space: nowrap;
   animation: rise 0.9s var(--ease) both;
 }
 
 .hero-line {
-  font-size: clamp(1.05rem, 2.4vw, 1.45rem);
+  display: block;
+  width: max-content;
+  max-width: none;
+  font-size: clamp(1rem, 2.2vw, 1.45rem);
   font-weight: 300;
   color: var(--ink-soft);
   margin: 0 auto 1.9rem;
-  white-space: nowrap;
+  white-space: nowrap !important;
+  overflow: visible;
   animation: rise 0.9s var(--ease) 0.08s both;
 }
 
