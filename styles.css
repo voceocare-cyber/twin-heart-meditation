@@ -283,16 +283,71 @@ a:hover { color: var(--ink); }
   max-width: 48rem;
   margin: 0 auto;
   color: var(--ink-soft);
+  text-align: center;
 }
 
 .practice-lede {
-  margin-bottom: 1.25rem;
-  font-size: 1.08rem;
+  margin: 0 auto 1.5rem;
+  max-width: 40rem;
+  font-family: var(--font-display);
+  font-size: clamp(1.2rem, 2.4vw, 1.45rem);
+  font-weight: 400;
+  line-height: 1.55;
+  letter-spacing: -0.01em;
+  color: var(--ink);
 }
 
 .practice-body strong {
+  font-weight: 650;
+  color: var(--rose-deep);
+}
+
+.practice-wide {
+  margin: 0 auto 2.25rem;
+  max-width: 38rem;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--ink-soft);
+}
+
+.practice-wide em {
+  font-style: normal;
   font-weight: 500;
   color: var(--ink);
+}
+
+.audience {
+  display: grid;
+  gap: 1rem;
+  text-align: left;
+}
+
+@media (min-width: 720px) {
+  .audience {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.25rem;
+  }
+}
+
+.audience-item {
+  padding: 1.35rem 1.4rem 1.45rem;
+  background: linear-gradient(165deg, #fff9fb 0%, #ffeef4 100%);
+  border-left: 3px solid var(--rose-mid);
+}
+
+.audience-item h3 {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 550;
+  margin: 0 0 0.55rem;
+  color: var(--ink);
+}
+
+.audience-item p {
+  margin: 0;
+  font-size: 0.98rem;
+  line-height: 1.65;
+  color: var(--ink-soft);
 }
 
 .watch {
